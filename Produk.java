@@ -1,4 +1,4 @@
-package Base;
+
 
 public class Produk {
     private String nama;
@@ -23,6 +23,13 @@ public class Produk {
         publicint getstok(){
                 return stok
             }
+        public void setHarga(double Harga){
+        this.harga = harga;
+    }
+    public void setStok(int Stok){
+        this.stok = stok;
+    }
+            
         }
     public void tampilkanInfo(){
         System.out.println("Produk: " + nama);

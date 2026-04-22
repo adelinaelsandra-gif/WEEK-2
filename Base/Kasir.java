@@ -1,5 +1,7 @@
 package Base;
 
+import Produk;
+
 public class Kasir {
         void cekProduk(Produk p) {
         System.out.println(p.stok); // public - boleh
