@@ -13,14 +13,14 @@ public class Produk {
     this.stok = stok;
     }
 
-    publicStrung getNama(){
+    public String getNama(){
     }
         return nama;
 
         public double getHarga(){
             return harga;
 
-        publicint getstok(){
+        public int getstok(){
                 return stok
             }
         public void setHarga(double Harga){
