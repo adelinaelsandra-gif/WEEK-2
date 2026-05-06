@@ -34,11 +34,14 @@ public String getNama() {
             System.out.println("Stok" + nama + " tidak cukup! Tersisa: " + stok);
             return;
     }
-    
+    stok -= jumlahBeli;
+    System.out.println(("Beli" + nama + "x" + jumlahBeli) + " = Rp" + hitungTotalHarga(jumlahBeli) + " | Sisa stok: " + stok);
 }
 
+public abstract void tampilkanInfo();
+public abstract double hitungPajak(double harga);
 
-
+}
 
 
 
