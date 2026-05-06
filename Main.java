@@ -11,5 +11,7 @@
         hp.tampilkanInfo();
         indomie.tampilkanInfo();
         roti.tampilkanInfo();
+
+        System.out.println("===== RINCIAN PAJAK ELEKTRONIK =====");
 }
 }
