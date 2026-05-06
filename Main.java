@@ -1,7 +1,10 @@
     public class Main {
     public static void main(String[] args) {
-        Elektronik mesinCuci = new Elektronik("Samsung", 200000.0, 20, "Alat Rumah", 5);
-        mesinCuci.setGaransi(0);
-        mesinCuci.tampilkanInfo();
+        Elektronik laptop = new Elektronik("Laptop Asus", "85.00000", 10, Asus, 2);
+        Elektronik hp = new Elektronik("HP Samsung, "320000", 25, 1");
+        Makanan indomie = new Makanan("Indomie Goremg", 3500, 1000, "Mie Instan", "2026-12-01");
+        Makanan roti = new Makanan("Roti Tawar", 8000, 100, "Roti", "2026-04-30");
+
+
 }
 }
