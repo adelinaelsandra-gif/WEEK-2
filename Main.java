@@ -37,5 +37,11 @@
         System.out.println(" Subtotal : Rp" + roti.hitungTotalHarga(5));
         System.out.println(" Diskon   : Rp" + roti.hitungDiskon(5, 15));
         System.out.println(" Total    : Rp" + roti.hitungTotalHarga(5) - roti.hitungDiskon(5, 15));
+
+        System.out.println("===== TRANSAKSI =====");
+        laptop.beli(1);
+        hp.beli(2);
+        indomie.beli(10);
+        roti.beli(5);
         }
 
