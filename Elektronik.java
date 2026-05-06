@@ -14,12 +14,16 @@ class Elektronik extends Produk {
     public int getGaransiTahun() {
         return garansiTahun;
     }
-
+// Overiding tampilInfo()- versi elektronik
     @Override
     public void tampilkanInfo(){
         System.out.println("Elektronik");
+        System.out.println("Nama   : " + getNama());
+        // super.tampilInfo();
         super.tampilkanInfo();
-        System.out.println("Masa garansi: " + "Hari");
+        System.out.println("Merek   : " + merek);
+        System.out.println("Garansi: " + garansiTahun + " tahun");
+        System.out.println("--------");
 
     }
 
