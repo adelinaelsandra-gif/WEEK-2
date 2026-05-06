@@ -9,16 +9,7 @@ abstract class Produk {
         this.stok = stok;
     }
 
-
-
-
-
-
-
-
-
-    
-    public String getNama() {
+public String getNama() {
         return nama;
     }
     public double getHarga() {
@@ -34,7 +25,12 @@ abstract class Produk {
         this.stok;
     }
 }
+
+
+
+
+
+
+
+
     
-
-
-{}
