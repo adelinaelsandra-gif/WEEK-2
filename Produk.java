@@ -24,6 +24,17 @@ public String getNama() {
     public void setStok(int stok){
         this.stok;
     }
+
+    public void beli(int jumlahBeli){
+        if ( (jumlahBeli <= 0)) {
+            System.out.println("Jumlah beli harus lebih dari 0!");
+            return;
+        }
+        if ( (jumlahBeli > stok)) {
+            System.out.println("Stok" + nama + " tidak cukup! Tersisa: " + stok);
+            return;
+    }
+    
 }
 
 
