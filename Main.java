@@ -32,5 +32,10 @@
         System.out.println(" Subtotal : Rp" + indomie.hitungTotalHarga(10));
         System.out.println(" Diskon   : Rp" + indomie.hitungDiskon(10));
         System.out.println(" Total    : Rp" + indomie.hitungTotalHargaSetelahDiskon(10));
-                }
+
+        System.out.println("Roti x5 (diskon custom 15%)");
+        System.out.println(" Subtotal : Rp" + roti.hitungTotalHarga(5));
+        System.out.println(" Diskon   : Rp" + roti.hitungDiskon(5, 15));
+        System.out.println(" Total    : Rp" + roti.hitungTotalHarga(5) - roti.hitungDiskon(5, 15));
+        }
 
