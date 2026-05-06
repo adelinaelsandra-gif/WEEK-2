@@ -5,6 +5,8 @@
         Makanan indomie = new Makanan("Indomie Goremg", 3500, 1000, "Mie Instan", "2026-12-01");
         Makanan roti = new Makanan("Roti Tawar", 8000, 100, "Roti", "2026-04-30");
 
+        // Overriding - satu nama method untuk semua
+        
 
 }
 }
