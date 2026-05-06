@@ -21,24 +21,24 @@ class Makanan extends Produk {
 
     public void setKadaluarsa(int kadaluarsa) {
         if (kadaluarsa < 0) {
-            System.out.println("Masa Expired Tidak Boleh Negatif");
+            System.out.println("Masa Kadaluarsa Tidak Boleh Negatif");
         } else {
             this.kadaluarsa = kadaluarsa;
         }
     }
 
-    public void setExpired(int expired, String type) {
+    public void setKadaluarsa(int kadaluarsa, String type) {
         if (type.equals("Nasi")) {
-            if (expired > 4) {
-                System.out.println("Masa Expired Tidak Boleh Negatif");
+            if (kadaluarsa > 4) {
+                System.out.println("Masa Kadaluarsa Tidak Boleh Negatif");
             } else {
-                this.expired = expired;
+                this.kadaluarsa = kadaluarsa;
             }
         } else {
-            if (expired < 2) {
-                System.out.println("Masa Expired Tidak Boleh Negatif");
+            if (kadaluarsa < 2) {
+                System.out.println("Masa Kadaluarsa Tidak Boleh Negatif");
             } else {
-                this.expired = expired;
+                this.kadaluarsa = kadaluarsa;
             }
         }
     }
