@@ -6,7 +6,10 @@
         Makanan roti = new Makanan("Roti Tawar", 8000, 100, "Roti", "2026-04-30");
 
         // Overriding - satu nama method untuk semua
-        
-
+        System.out.println("===== DAFTAR PRODUK =====");
+        laptop.tampilkanInfo();
+        hp.tampilkanInfo();
+        indomie.tampilkanInfo();
+        roti.tampilkanInfo();
 }
 }
