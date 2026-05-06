@@ -26,5 +26,11 @@
         System.out.println(" Subtotal : Rp" + hp.hitungTotalHarga(2));
         System.out.println(" Pajak    : Rp" + pajakHpCustom);
         System.out.println(" Total    : Rp" + (hp.hitungTotalHarga(2) + pajakHpCustom));
-        }
+
+        System.out.println("===== RINCIAN DISKON MAKANAN =====");
+        System.out.println("Indomie x10 (diskon otomatis)");
+        System.out.println(" Subtotal : Rp" + indomie.hitungTotalHarga(10));
+        System.out.println(" Diskon   : Rp" + indomie.hitungDiskon(10));
+        System.out.println(" Total    : Rp" + indomie.hitungTotalHargaSetelahDiskon(10));
+                }
 
