@@ -38,15 +38,13 @@ class Elektronik extends Produk {
     }
 
     public double hitungHarga setelahPajak(int jumlahBeli){
-
-
+        return hitungTotalHarga(jumlahBeli) + hitungPajak(jumlahBeli);
     }
-    public void setGaransi(int garansi){
-        if(garansi < 0){
-            System.out.println("Masa garansi Tidak Boleh Negatif");
-        }else{
-            this.garansi = garansi;
-        }
+
+    @Override
+    public double hitungPajak(double harga) {
+        return harga * 0.20;
     }
-}
+    }
+
 
