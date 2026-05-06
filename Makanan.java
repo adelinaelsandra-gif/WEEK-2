@@ -19,6 +19,31 @@ class Makanan extends Produk {
         return kategori;
     }
 
+    public void setKadaluarsa(int kadaluarsa) {
+        if (kadaluarsa < 0) {
+            System.out.println("Masa Expired Tidak Boleh Negatif");
+        } else {
+            this.kadaluarsa = kadaluarsa;
+        }
+    }
+
+    public void setExpired(int expired, String type) {
+        if (type.equals("Nasi")) {
+            if (expired > 4) {
+                System.out.println("Masa Expired Tidak Boleh Negatif");
+            } else {
+                this.expired = expired;
+            }
+        } else {
+            if (expired < 2) {
+                System.out.println("Masa Expired Tidak Boleh Negatif");
+            } else {
+                this.expired = expired;
+            }
+        }
+    }
+
+}
 
 
 
@@ -26,17 +51,4 @@ class Makanan extends Produk {
 
 
     
-    public void tampikanData(){
-        super.tampilkanInfo();
-        System.out.println("Masa expired: " + "Hari");
-
-    }
-
-    public void setExpired(int expired){
-        if(expired <= 0){
-            System.out.println("Masa Expired Tidak Boleh Negatif");
-        }else{
-            this.expired = expired;
-        }
-    }
-}
+    
