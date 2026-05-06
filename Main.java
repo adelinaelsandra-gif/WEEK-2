@@ -14,10 +14,17 @@
 
         System.out.println("===== RINCIAN PAJAK ELEKTRONIK =====");
 }
-double pajakLaptop = laptop.hitungPajak(1);
-double totalLaptop = laptop.hitungTotalHarga(1);
-System.out.println("Laptop x1 (PPN standar 11%)");
-System.out.println(" Subtotal : Rp" + laptop.hitungTotalHarga(1));
-System.out.println(" Pajak    : Rp" + pajakLaptop);
-System.out.println(" Total    : Rp" + totalLaptop);
-}
+        double pajakLaptop = laptop.hitungPajak(1);
+        double totalLaptop = laptop.hitungTotalHarga(1);
+        System.out.println("Laptop x1 (PPN standar 11%)");
+        System.out.println(" Subtotal : Rp" + laptop.hitungTotalHarga(1));
+        System.out.println(" Pajak    : Rp" + pajakLaptop);
+        System.out.println(" Total    : Rp" + totalLaptop);
+
+        double pajakHpCustom = hp.hitungPajak(2);
+        System.out.println("HP Samsung x2 (pajak custom 5%)");
+        System.out.println(" Subtotal : Rp" + hp.hitungTotalHarga(2));
+        System.out.println(" Pajak    : Rp" + pajakHpCustom);
+        System.out.println(" Total    : Rp" + (hp.hitungTotalHarga(2) + pajakHpCustom));
+        }
+
